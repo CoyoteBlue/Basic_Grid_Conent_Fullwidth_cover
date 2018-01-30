@@ -1,0 +1,25 @@
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: minmax(1em, 1fr) minmax(0, 40em) minmax(1em, 1fr);
+    margin: 0 auto;
+    justify-self: center;
+}
+
+p {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
+
+.grid>* {
+    grid-column: 2;
+    border: 1px solid #ccc;
+    /*    background-color: rgba(0, 0, 0, 0.5);*/
+    color: #333;
+    background-color: rgba(229, 255, 0, 0.48);
+}
+
+.grid>.full {
+    grid-column: 1 / 4;
+}
